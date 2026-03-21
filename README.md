@@ -1,14 +1,7 @@
 <html lang="en">
 <body>
 <div>
-  <!-- Header -->
-  <section>
-    <h1>Scott Slagle</h1>
-    <p>CS Capstone ePortfolio &nbsp;·&nbsp; B.S. Computer Science &nbsp;·&nbsp; Southern New Hampshire University<br />
-    Updated: 3/21/2026</p>
-  </section>
-
-  <!-- Table of Contents -->
+   <!-- Table of Contents -->
   <nav>
     <h2>Table of Contents</h2>
     <ol>
