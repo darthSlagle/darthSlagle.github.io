@@ -1,13 +1,12 @@
-<!DOCTYPE html>
 <html lang="en">
 <body>
 <div>
   <!-- Header -->
-  <header>
+  <section>
     <h1>Scott Slagle</h1>
     <p>CS Capstone ePortfolio &nbsp;·&nbsp; B.S. Computer Science &nbsp;·&nbsp; Southern New Hampshire University<br />
     Updated: 3/21/2026</p>
-  </header>
+  </section>
 
   <!-- Table of Contents -->
   <nav>
