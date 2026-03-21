@@ -73,7 +73,7 @@
    <!-- References -->
   <section>
     <h2>References</h2>
-    <p>Video Icon Pictures PNG Transparent Background, Free Download #8044 - FreeIconsPNG. (2016). Freeiconspng.com. <a href="https://www.freeiconspng.com/img/8044‌" target="_blank">https://www.freeiconspng.com/img/8044‌</a></p>
+    <p>Video Icon Pictures PNG Transparent Background, Free Download #8044 - FreeIconsPNG. (2016). Freeiconspng.com. https://www.freeiconspng.com/img/8044‌</p>
   </section>
 </div>
 
