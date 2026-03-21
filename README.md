@@ -38,7 +38,7 @@
       to the five course outcomes.
     </p>
     <p align="center">
-      <a href="https://slaglecloud.net/ePortfolio/MilestoneOne-CodeReview.mp4">
+      <a href="https://slaglecloud.net/ePortfolio/MilestoneOne-CodeReview.mp4" target="_blank">
         <img src="https://slaglecloud.net/ePortfolio/video-icon.png" width="200">
       </a>
       <br />
@@ -73,7 +73,7 @@
    <!-- References -->
   <section>
     <h2>References</h2>
-    <p>Video Icon Pictures PNG Transparent Background, Free Download #8044 - FreeIconsPNG. (2016). Freeiconspng.com. https://www.freeiconspng.com/img/8044‌</p>
+    <p>Video Icon Pictures PNG Transparent Background, Free Download #8044 - FreeIconsPNG. (2016). Freeiconspng.com. <a href="https://www.freeiconspng.com/img/8044‌" target="_blank">https://www.freeiconspng.com/img/8044‌</a></p>
   </section>
 </div>
 
