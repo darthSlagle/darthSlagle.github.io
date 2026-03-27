@@ -48,7 +48,6 @@
   <!-- Enhancement One -->
   <section id="enhancement-one">
     <h2>Enhancement One &mdash; Software Design and Engineering</h2>
-
     <h3>Artifact Description</h3>
     <p>
       The artifact selected for this enhancement is the <strong>84 Community Food Pantry Web Application</strong>,
@@ -59,7 +58,6 @@
       in this capstone project so enhancements could be implemented without affecting the live system.
       These enhancements will be integrated into the live system upon completion of this course.
     </p>
-
     <h3>Justification</h3>
     <p>
       This artifact was selected because it demonstrates several important software engineering principles
@@ -85,7 +83,6 @@
       Safeguards were also added to prevent administrators from accidentally disabling their own
       accounts or modifying their own privilege level.
     </p>
-
     <h3>Reflection</h3>
     <p>
       Through this enhancement, skills were demonstrated aligned with several program outcomes,
@@ -103,7 +100,6 @@
       checks made the system more robust and easier to maintain, and strengthened the understanding
       of how thoughtful software architecture decisions improve both security and long-term scalability.
     </p>
-
     <h3>Artifact Files</h3>
     <table>
       <thead>
@@ -132,13 +128,6 @@
         </tr>
       </tbody>
     </table>
-
-    <p>
-      <a href="enhancement-one/Software%20Design%20and%20Engineering%20Narrative%20-%20Scott%20Slagle.docx">
-        &#128196; Download Narrative (Word Document)
-      </a>
-    </p>
-
   </section>
 
   <!-- Enhancement Two -->
