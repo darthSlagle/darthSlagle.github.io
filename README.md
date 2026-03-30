@@ -113,14 +113,6 @@
       security and long-term scalability of real-world applications.
    </p>
 
-  <h2>References</h2>
-  <p>
-    Ferraiolo, D. F., Sandhu, R., Gavrila, S., Kuhn, D. R., &amp; Chandramouli, R. (2001).
-    Proposed NIST standard for role-based access control.
-    <em>ACM Transactions on Information and System Security, 4</em>(3), 224–274.
-    <a href="https://doi.org/10.1145/501978.501980">https://doi.org/10.1145/501978.501980</a>
-  </p>
-  
   <h3>Artifact Files</h3>
     <table>
       <thead>
@@ -166,7 +158,13 @@
    <!-- References -->
   <section>
     <h2>References</h2>
-    <p>Video Icon Pictures PNG Transparent Background, Free Download #8044 - FreeIconsPNG. (2016). Freeiconspng.com. https://www.freeiconspng.com/img/8044‌</p>
+      <p>
+       Ferraiolo, D. F., Sandhu, R., Gavrila, S., Kuhn, D. R., &amp; Chandramouli, R. (2001).
+       Proposed NIST standard for role-based access control.
+       <em>ACM Transactions on Information and System Security, 4</em>(3), 224–274.
+       <a href="https://doi.org/10.1145/501978.501980">https://doi.org/10.1145/501978.501980</a>
+     </p>
+     <p>Video Icon Pictures PNG Transparent Background, Free Download #8044 - FreeIconsPNG. (2016). Freeiconspng.com. https://www.freeiconspng.com/img/8044‌</p>
   </section>
 </div>
 
