@@ -144,10 +144,75 @@
   </section>
 
   <!-- Enhancement Two -->
-  <section>
-    <h2>Enhancement Two — Algorithms and Data Structures</h2>
-    <p>Coming Soon</p>
-  </section>
+  <!-- Enhancement Two -->
+<section>
+  <h2>Enhancement Two — Algorithms and Data Structures</h2>
+  <p>
+    The artifact selected for this category is the <strong>income eligibility determination engine</strong>
+    developed for the 84 Community Food Pantry web application.  This component evaluates a household's
+    reported income and household size against Federal Poverty Level guidelines and assigns an eligibility
+    tier used to determine qualification for participation in pantry distributions.  Prior to this enhancement,
+    eligibility determinations were performed manually by reviewing printed guideline tables from the
+    Greater Pittsburgh Community Food Bank.  The enhanced artifact introduces an automated decision-making
+    component that improves consistency, efficiency, and accuracy.
+  </p>
+
+  <p>
+    This artifact was selected because it demonstrates practical application of algorithmic thinking and
+    structured data evaluation in a real-world environment.  The eligibility engine transforms regulatory
+    guidance into a deterministic classification process, highlighting the ability to translate policy
+    requirements into logical algorithms backed by defined data structures.  By storing Federal Poverty Level
+    thresholds and eligibility tiers in the database rather than hard-coding them, the algorithm separates
+    reference data from procedural logic, improving maintainability and allowing annual guideline updates
+    without code changes.
+  </p>
+
+  <p>
+    The enhanced artifact applies a step-by-step algorithm that accepts household size and annual income as
+    input, retrieves the corresponding FPL threshold from the database, calculates the household's percentage
+    of the poverty level, and assigns an eligibility tier based on defined ranges.  The modular design of
+    eligibility_engine.cfm allows this logic to be reused across multiple workflows, including
+    initial registration and periodic income updates.  This demonstrates how separating algorithmic logic into
+    reusable components reduces redundancy and improves long-term maintainability.
+  </p>
+
+  <p>
+    The primary challenge during this enhancement was handling boundary conditions when an exact household
+    size match was not available in the stored guidelines.  Real-world data does not always align perfectly
+    with predefined values, requiring thoughtful logic to determine whether to require an exact match or
+    dynamically evaluate the closest applicable guideline range, particularly for households larger than
+    the maximum defined value.  Implementing consistent and predictable behavior in these cases
+    reinforced the importance of clearly defining algorithm boundaries when processing real-world data.
+  </p>
+
+  <p>
+    This enhancement strengthened the understanding of how algorithms and data structures support reliable
+    decision-making in software systems.  The resulting component provides a repeatable, transparent, and
+    scalable method of determining eligibility that improves both administrative efficiency and data
+    consistency within the food pantry system.
+  </p>
+
+  <h3>Artifact Files</h3>
+  <table>
+    <thead>
+      <tr><th>File</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="enhancement-two/enhanced/eligibility_engine.cfm">eligibility_engine.cfm (Enhanced)</a></td>
+        <td>Modular eligibility determination engine using database-driven FPL thresholds</td>
+      </tr>
+       <tr>
+        <td><a href="enhancement-two/enhanced/people.cfm">people.cfm (Enhanced)</a></td>
+        <td>Recipient management module updated to integrate automated eligibility determination</td>
+      </tr>
+      <tr>
+        <td><a href="enhancement-two/original/people.cfm">people.cfm (Original)</a></td>
+        <td>OOriginal recipient management module before eligibility engine integration</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
 
   <!-- Enhancement Three -->
   <section>
