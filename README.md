@@ -53,7 +53,10 @@
       affecting the live environment.  These improvements will be integrated into the production 
       system upon completion of this course.
    </p>
+  </section>
 
+  <!-- Enhancement One -->
+  <section>
    <h2>Software Design and Engineering Artifact</h2>
 
    <p>
@@ -143,8 +146,7 @@
     </table>
   </section>
 
-  <!-- Enhancement Two -->
-  <!-- Enhancement Two -->
+<!-- Enhancement Two -->
 <section>
   <h2>Enhancement Two — Algorithms and Data Structures</h2>
   <p>
@@ -214,23 +216,102 @@
   </table>
 </section>
 
-  <!-- Enhancement Three -->
-  <section>
-    <h2>Enhancement Three — Databases</h2>
-    <p>Coming Soon</p>
-  </section>
+<!-- Enhancement Three -->
+<section>
+  <h2>Enhancement Three — Databases</h2>
+  <p>
+    The artifact selected for the Databases category is the <strong>database schema</strong> supporting the
+    84 Community Food Pantry web application. The schema manages recipient records, food distribution
+    scheduling and tracking, registration workflows, and administrative functions used by pantry volunteers.
+    The original schema was created alongside the application in February 2026. The changes implemented for
+    this milestone were developed in a test environment and will be deployed to the production system upon
+    course completion.
+  </p>
 
-   <!-- References -->
-  <section>
-    <h2>References</h2>
-      <p>
-       Ferraiolo, D. F., Sandhu, R., Gavrila, S., Kuhn, D. R., &amp; Chandramouli, R. (2001).
-       Proposed NIST standard for role-based access control.
-       <em>ACM Transactions on Information and System Security, 4</em>(3), 224–274.
-       <a href="https://doi.org/10.1145/501978.501980">https://doi.org/10.1145/501978.501980</a>
-     </p>
-     <p>Video Icon Pictures PNG Transparent Background, Free Download #8044 - FreeIconsPNG. (2016). Freeiconspng.com. https://www.freeiconspng.com/img/8044‌</p>
-  </section>
+  <p>
+    Two SQL deployment scripts represent two distinct but complementary enhancements.
+    <strong>RBAC_Deployment.sql</strong> introduces a role-based security structure by creating a
+    <code>tbl_Roles</code> table and linking it to the existing <code>tbl_AdminUsers</code> table through
+    a foreign key relationship. This design separates role definitions from user records, enforces
+    referential integrity at the database level, and supports additional roles in the future without schema
+    changes (Ferraiolo et al., 2001). Existing user records were assigned appropriate roles before the
+    <code>NOT NULL</code> constraint was enforced on the <code>RoleID</code> column, preventing data
+    integrity violations during migration.
+  </p>
+
+  <p>
+    <strong>Eligibility_Engine_Deployment.sql</strong> addresses the database layer of the income
+    eligibility determination system. It extends <code>tbl_People</code> with eligibility-related columns,
+    creates a <code>tbl_FPL_Guidelines</code> table seeded with 2026 Federal Poverty Level data published
+    by the Department of Health and Human Services (ASPE, 2023), and creates a
+    <code>tbl_EligibilityAudit</code> table that records a history of every eligibility calculation
+    performed for each recipient. A unique constraint on the combination of year and household size prevents
+    duplicate guideline records during repeated deployments. The audit table stores the FPL threshold and
+    percentage directly at the time of calculation — ensuring historical records always reflect the
+    guideline values in effect at that moment, even as the guidelines table is updated in future years.
+  </p>
+
+  <p>
+    Both scripts were written and commented with production safety in mind. Deployment considerations were
+    included to ensure schema changes apply cleanly to an existing live system without data loss. This
+    reflects an understanding that database changes in production environments carry real risk, and that a
+    well-structured deployment script is as important as the schema design itself.
+  </p>
+
+  <p>
+    This enhancement demonstrated database design skills, security-conscious schema architecture, and the
+    use of normalized data structures to support algorithmic decision-making. Storing FPL threshold values
+    in a database-driven table rather than hard-coding them in application logic is a deliberate
+    architectural decision that improves maintainability and allows annual guideline updates without code
+    modifications. Together, the two scripts show how well-founded database design delivers real operational
+    value while enforcing integrity at the data layer.
+  </p>
+
+  <h3>Artifact Files</h3>
+  <table>
+    <thead>
+      <tr><th>File</th><th>Description</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a href="enhancement-three/original/Schema Export - Original.txt">Schema Export — Original</a></td>
+        <td>Baseline database schema export prior to any enhancements</td>
+      </tr>
+      <tr>
+        <td><a href="enhancement-three/enhanced/Schema Export - Enhanced.txt">Schema Export — Enhanced</a></td>
+        <td>Full database schema export reflecting all enhancements applied across milestones</td>
+      </tr>
+      <tr>
+        <td><a href="enhancement-three/original/RBAC_Deployment.sql">RBAC_Deployment.sql</a></td>
+        <td>Deployment script creating the roles table and linking it to the admin users table</td>
+      </tr>
+      <tr>
+        <td><a href="enhancement-three/original/Eligibility_Engine_Deployment.sql">Eligibility_Engine_Deployment.sql</a></td>
+        <td>Deployment script adding FPL guidelines, eligibility audit table, and recipient eligibility columns</td>
+      </tr> 
+    </tbody>
+  </table>
+</section>
+
+<!-- References -->
+<section>
+  <h2>References</h2>
+  <p>
+    Ferraiolo, D. F., Sandhu, R., Gavrila, S., Kuhn, D. R., &amp; Chandramouli, R. (2001).
+    Proposed NIST standard for role-based access control.
+    <em>ACM Transactions on Information and System Security, 4</em>(3), 224–274.
+    <a href="https://doi.org/10.1145/501978.501980">https://doi.org/10.1145/501978.501980</a>
+  </p>
+  <p>
+    Office of the Assistant Secretary for Planning and Evaluation. (2023, January 19).
+    <em>Poverty guidelines.</em> ASPE; U.S. Department of Health and Human Services.
+    <a href="https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines">https://aspe.hhs.gov/topics/poverty-economic-mobility/poverty-guidelines</a>
+  </p>
+  <p>
+    Video Icon Pictures PNG Transparent Background, Free Download #8044 - FreeIconsPNG. (2016). Freeiconspng.com.
+    <a href="https://www.freeiconspng.com/img/8044">https://www.freeiconspng.com/img/8044</a>
+  </p>
+</section>
 </div>
 
 </body>
