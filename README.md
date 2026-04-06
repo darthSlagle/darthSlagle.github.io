@@ -509,6 +509,67 @@
     thoughtful schema design demands.
   </p>
 
+   <h3>Screenshots</h3>
+
+   <h4>Database Relationship Diagram — Before &amp; After</h4>
+   <p>
+     The diagrams below show the database schema before and after the enhancements implemented across
+     both milestones.  The original schema contains no role structure linked to administrative users,
+     and tbl_People contains only basic recipient contact fields with no eligibility-related columns.
+      The enhanced schema reflects both the RBAC and eligibility engine additions in full.
+   </p>
+   <table>
+     <thead>
+       <tr>
+          <th>Original</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td align="center">
+           <img src="https://slaglecloud.net/ePortfolio/ORIGINAL-TableSchemaDiagram.png" width="100%" alt="Original database schema — no roles table, no eligibility columns" />
+           <br /><em>No role structure, no eligibility columns on tbl_People, no audit table</em>
+         </td>
+       </tr>
+     </tbody>
+   </table>
+
+   <table>
+     <thead>
+       <tr>
+          <th>Enhanced</th>
+       </tr>
+     </thead>
+     <tbody>
+         <td align="center">
+           <img src="https://slaglecloud.net/ePortfolio/ENHANCED-TableSchemaDiagram.png" width="100%" alt="Enhanced database schema — roles, eligibility columns, and audit table added" />
+           <br /><em>tbl_Roles linked to tbl_AdminUsers, tbl_People expanded, tbl_EligibilityAudit added</em>
+         </td>
+       </tr>
+     </tbody>
+   </table>
+   
+   <h4>Deployment Flow Diagrams</h4>
+   <p>
+     The diagrams below illustrate the ordered sequence of operations executed by each deployment
+     script.  Both scripts were written with production safety in mind, ensuring that schema changes
+     could be applied to a live system without data loss or integrity violations.
+   </p>
+   <p>
+     The RBAC deployment flow (left) shows the deliberate order of operations, creating the roles
+     table first, adding the RoleID column to tbl_AdminUsers, updating existing user records with
+     appropriate role assignments, and only then enforcing the foreign key constraint.  This sequence
+     was critical to prevent data integrity violations against existing records during migration.
+   </p>
+   <p>
+     The eligibility engine deployment flow (right) shows the creation of the FPL guidelines and
+     eligibility tiers reference tables, followed by the audit table, before foreign key constraints
+     are applied, ensuring all referenced tables exist before relationships are enforced.
+   </p>
+   <p align="center">
+     <img src="https://slaglecloud.net/ePortfolio/ENHANCED-DeploymentFlowDiagram.png" width="100%" alt="Deployment flow diagrams for RBAC and eligibility engine SQL scripts showing order of operations" />
+   </p>
+
   <h3>Artifact Files</h3>
   <table>
     <thead>
