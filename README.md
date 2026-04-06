@@ -147,7 +147,9 @@
   </table>
   <table>
    <thead>
-      <tr><th>Enhanced</th></tr>
+      <tr>
+         <th>Enhanced</th>
+      </tr>
    </thead>
    <tbody>
       <tr>
@@ -193,7 +195,10 @@
   <h3>Artifact Files</h3>
     <table>
       <thead>
-        <tr><th>File</th><th>Description</th></tr>
+        <tr>
+           <th>File</th>
+           <th>Description</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
@@ -392,7 +397,10 @@
   <h3>Artifact Files</h3>
   <table>
     <thead>
-      <tr><th>File</th><th>Description</th></tr>
+      <tr>
+         <th>File</th>
+         <th>Description</th>
+      </tr>
     </thead>
     <tbody>
       <tr>
@@ -573,7 +581,10 @@
   <h3>Artifact Files</h3>
   <table>
     <thead>
-      <tr><th>File</th><th>Description</th></tr>
+      <tr>
+         <th>File</th>
+         <th>Description</th>
+      </tr>
     </thead>
     <tbody>
       <tr>
