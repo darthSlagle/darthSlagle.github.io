@@ -25,7 +25,7 @@
     to solving real-world problems.  Throughout the program, I have had the opportunity to apply
     computer science principles in ways that extend well beyond academic exercises, and my
     capstone project shown in this ePortfolio is the clearest example of that.  I did not build the 84 Community
-    Food Pantry Web Application for a grade, it was built it to help my community food pantry be more effective to
+    Food Pantry Web Application for a grade, it was built to help my community food pantry be more effective to
     be able to feed more people.  Every decision to enhance the application has practical use in mind.
   </p>
 
