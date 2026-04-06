@@ -144,7 +144,7 @@
       to the five course outcomes.
     </p>
     <p align="center">
-      <a href="https://slaglecloud.net/ePortfolio/MilestoneOne-CodeReview.mp4" target="_blank">
+      <a href="https://slaglecloud.net/ePortfolio/video/" target="_blank">
         <img src="https://slaglecloud.net/ePortfolio/video-icon.png" width="200">
       </a>
       <br />
