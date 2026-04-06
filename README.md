@@ -311,16 +311,29 @@
   </p>
   <table>
     <thead>
-      <tr><th>Original</th><th>Enhanced</th></tr>
+      <tr>
+         <th>Original</th>
+      </tr>
     </thead>
     <tbody>
       <tr>
         <td align="center">
-          <img src="https://slaglecloud.net/ePortfolio/ORIGINAL-People.png" width="420" alt="Original People list — no Tier column" />
+          <img src="https://slaglecloud.net/ePortfolio/ORIGINAL-People.png" width="100%" alt="Original People list — no Tier column" />
           <br /><em>No eligibility tier displayed</em>
         </td>
+      </tr>
+    </tbody>
+  </table>
+   <table>
+    <thead>
+      <tr>
+         <th>Enhanced</th>
+       </tr>
+    </thead>
+    <tbody>
+      <tr>
         <td align="center">
-          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-People.png" width="420" alt="Enhanced People list — Tier column added" />
+          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-People.png" width="100%" alt="Enhanced People list — Tier column added" />
           <br /><em>Eligibility tier badge displayed for each recipient</em>
         </td>
       </tr>
@@ -336,16 +349,29 @@
   </p>
   <table>
     <thead>
-      <tr><th>Before Save</th><th>After Save</th></tr>
+      <tr>
+         <th>Before Save</th>
+      </tr>
     </thead>
     <tbody>
       <tr>
         <td align="center">
-          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AddPerson-SavetoRunEligibilityEngine.png" width="420" alt="Add Person form with household size and income fields ready to save" />
+          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AddPerson-SavetoRunEligibilityEngine.png" width="100%" alt="Add Person form with household size and income fields ready to save" />
           <br /><em>Household size and income entered — Save triggers the engine</em>
         </td>
+      </tr>
+    </tbody>
+  </table>
+  <table>
+    <thead>
+      <tr>
+         <th>After Save</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
         <td align="center">
-          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AddPerson-EligibilityEngineCompleted.png" width="420" alt="People list after add — new recipient shown with Tier badge" />
+          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AddPerson-EligibilityEngineCompleted.png" width="100%" alt="People list after add — new recipient shown with Tier badge" />
           <br /><em>Recipient added with eligibility tier automatically assigned</em>
         </td>
       </tr>
@@ -360,7 +386,7 @@
     automatically.
   </p>
   <p align="center">
-    <img src="https://slaglecloud.net/ePortfolio/ENHANCED-EditPerson-ShowsResults-SavetoRerunEngine.png" width="860" alt="Edit Person view showing Eligibility Results section with tier, FPL percentage, FPL amount, and last calculated timestamp" />
+    <img src="https://slaglecloud.net/ePortfolio/ENHANCED-EditPerson-ShowsResults-SavetoRerunEngine.png" width="100%" alt="Edit Person view showing Eligibility Results section with tier, FPL percentage, FPL amount, and last calculated timestamp" />
   </p>
 
   <h3>Artifact Files</h3>
