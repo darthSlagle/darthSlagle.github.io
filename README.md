@@ -122,9 +122,9 @@
     scalability of real-world applications.
   </p>
 
-  <h3>Screenshots</h3>
+  <h2>Screenshots</h2>
 
-  <h4>Admin Dashboard — Before &amp; After</h4>
+  <h2>Admin Dashboard — Before &amp; After</h2>
   <p>
     The original dashboard provided no access controls.  All navigation options were available
     to any authenticated user.  The enhanced dashboard conditionally shows the
@@ -161,7 +161,7 @@
     </tbody>
   </table>
 
-  <h4>User Manager</h4>
+  <h2>User Manager</h2>
   <p>
     The User Manager, only accessible to the Global Admin role, displays all
     administrative accounts with their assigned role, status, and last login.  Role badges
@@ -172,7 +172,7 @@
     <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AdminUserManager.png" width="860" alt="Enhanced Admin User Manager — role and status display" />
   </p>
 
-  <h4>Add Admin User</h4>
+  <h2>Add Admin User</h2>
   <p>
     New administrator accounts require a username, password, and role assignment at creation.
      Roles are populated dynamically from the database, ensuring that any roles added in the
@@ -182,7 +182,7 @@
     <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AddAdminuser.png" width="860" alt="Enhanced Add Admin User form with role selection" />
   </p>
 
-  <h4>Edit Admin User</h4>
+  <h2>Edit Admin User</h2>
   <p>
     The edit interface allows a Global Admin to change another user's role, reset their
     password, or deactivate their account.  Safeguards in the application logic prevent an
@@ -192,7 +192,7 @@
     <img src="https://slaglecloud.net/ePortfolio/ENHANCED-EditAdminuser.png" width="860" alt="Enhanced Edit Admin User interface with role, password, and status controls" />
   </p>
 
-  <h3>Artifact Files</h3>
+  <h2>Artifact Files</h2>
     <table>
       <thead>
         <tr>
@@ -305,9 +305,9 @@
     pantry system.
   </p>
 
-  <h3>Screenshots</h3>
+  <h2>Screenshots</h2>
 
-  <h4>People List — Before &amp; After</h4>
+  <h2>People List — Before &amp; After</h2>
   <p>
     The original People list displayed only name, phone, status, and actions. The enhanced version
     adds a <strong>Tier</strong> column showing each recipient's calculated eligibility tier directly
@@ -345,7 +345,7 @@
     </tbody>
   </table>
 
-  <h4>Add Person — Eligibility Engine Integration</h4>
+  <h2>Add Person — Eligibility Engine Integration</h2>
   <p>
     The Add Person form was updated to collect household size and annual gross income at the time of
     registration. When the record is saved, the eligibility engine runs automatically and assigns
@@ -383,7 +383,7 @@
     </tbody>
   </table>
 
-  <h4>Edit Person — Eligibility Results</h4>
+  <h2>Edit Person — Eligibility Results</h2>
   <p>
     The Edit Person view surfaces the full eligibility determination result inline, displaying the
     assigned tier, FPL percentage, FPL threshold amount, and the timestamp of the last calculation.
@@ -394,7 +394,7 @@
     <img src="https://slaglecloud.net/ePortfolio/ENHANCED-EditPerson-ShowsResults-SavetoRerunEngine.png" width="100%" alt="Edit Person view showing Eligibility Results section with tier, FPL percentage, FPL amount, and last calculated timestamp" />
   </p>
 
-  <h3>Artifact Files</h3>
+  <h2>Artifact Files</h2>
   <table>
     <thead>
       <tr>
@@ -517,9 +517,9 @@
     thoughtful schema design demands.
   </p>
 
-   <h3>Screenshots</h3>
+   <h2>Screenshots</h2>
 
-   <h4>Database Relationship Diagram — Before &amp; After</h4>
+   <h2>Database Relationship Diagram — Before &amp; After</h2>
    <p>
      The diagrams below show the database schema before and after the enhancements implemented across
      both milestones.  The original schema contains no role structure linked to administrative users,
@@ -558,7 +558,7 @@
      </tbody>
    </table>
    
-   <h4>Deployment Flow Diagrams</h4>
+   <h2>Deployment Flow Diagrams</h2>
    <p>
      The diagrams below illustrate the ordered sequence of operations executed by each deployment
      script.  Both scripts were written with production safety in mind, ensuring that schema changes
@@ -579,7 +579,7 @@
      <img src="https://slaglecloud.net/ePortfolio/ENHANCED-DeploymentFlowDiagram.png" width="100%" alt="Deployment flow diagrams for RBAC and eligibility engine SQL scripts showing order of operations" />
    </p>
 
-  <h3>Artifact Files</h3>
+  <h2>Artifact Files</h2>
   <table>
     <thead>
       <tr>
