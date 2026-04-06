@@ -60,8 +60,8 @@
   <h2>Enhancement One — Software Design and Engineering</h2>
 
   <p>
-    The artifact I selected for the Software Design and Engineering category is my 84 Community Food
-    Pantry Web Application, a full-stack web application I developed to support the operations of my
+    The artifact I selected for the Software Design and Engineering category is my <strong>84 Community Food
+    Pantry Web Application</strong>, a full-stack web application I developed to support the operations of my
     local community food pantry. The application manages recipient contact information, recipient
     registration tasks, distribution tracking, and administrative functions used by the volunteers
     during food distribution events. The system was originally developed as a solution for the pantry;
@@ -229,12 +229,12 @@
   <p>
     I selected this artifact for inclusion in my ePortfolio because it demonstrates practical
     application of algorithmic thinking and structured data evaluation in a real-world environment.
-     The eligibility engine transforms regulatory guidance into a deterministic classification process
-    that evaluates numeric inputs and produces consistent results.  This enhancement highlights my
+    The eligibility engine transforms regulatory guidance into a deterministic classification process
+    that evaluates numeric inputs and produces consistent results. This enhancement highlights my
     ability to translate policy requirements into a logical algorithm that uses defined data structures
-    to guide decision-making.  The component also demonstrates how structured lookup tables can be used
+    to guide decision-making. The component also demonstrates how structured lookup tables can be used
     to drive classification logic rather than relying on hard-coded values, allowing the system to
-    adapt easily as poverty guideline thresholds change annually.  By storing guideline thresholds and
+    adapt easily as poverty guideline thresholds change annually. By storing guideline thresholds and
     eligibility tiers in the database, the algorithm separates reference data from procedural logic,
     improving maintainability and scalability.
   </p>
@@ -243,21 +243,21 @@
     The enhanced artifact applies a step-by-step algorithm that accepts household size and annual income
     as input, retrieves the corresponding Federal Poverty Level threshold from the database, calculates
     the household's percentage of the poverty level, and assigns an eligibility tier based on defined
-    ranges.  This deterministic approach ensures that identical inputs always produce the same output,
-    which is critical when implementing systems that must follow regulatory guidelines.  The algorithm
+    ranges. This deterministic approach ensures that identical inputs always produce the same output,
+    which is critical when implementing systems that must follow regulatory guidelines. The algorithm
     relies on structured data relationships and conditional evaluation logic to determine eligibility
-    classification.  The modular design of the eligibility_engine.cfm file also allows the logic to be
+    classification. The modular design of the eligibility_engine.cfm file also allows the logic to be
     reused across multiple application workflows, including initial registration and periodic income
-    updates.  This demonstrates how separating algorithmic logic into reusable components improves
+    updates. This demonstrates how separating algorithmic logic into reusable components improves
     maintainability and reduces redundancy within the application.
   </p>
 
   <p>
     Through this enhancement, I demonstrated skills aligned with course outcomes related to algorithm
     design, structured problem solving, and implementation of computing solutions that address
-    real-world needs.  Designing the eligibility determination process required careful consideration
+    real-world needs. Designing the eligibility determination process required careful consideration
     of how to structure reference data efficiently, how to minimize repeated calculations, and how to
-    ensure the logic remained adaptable as guidelines evolve.  The use of database-driven thresholds
+    ensure the logic remained adaptable as guidelines evolve. The use of database-driven thresholds
     provides flexibility and prevents the need for code changes when regulatory values are updated.
     This design decision reflects an understanding of how appropriate data structures can improve both
     efficiency and long-term sustainability of a system.
@@ -266,14 +266,14 @@
   <p>
     During my work on enhancing this artifact, my primary challenge was understanding and interpreting
     into code how the algorithm should evaluate household size when an exact guideline match was not
-    available.  The Federal Poverty Level guidelines are published with defined income thresholds based
-    on specific household sizes.  However, real-world data does not always align perfectly with
-    predefined values, requiring thoughtful handling of boundary conditions.  I needed to determine
+    available. The Federal Poverty Level guidelines are published with defined income thresholds based
+    on specific household sizes. However, real-world data does not always align perfectly with
+    predefined values, requiring thoughtful handling of boundary conditions. I needed to determine
     whether the algorithm should require an exact match to a stored household size value or dynamically
-    evaluate the closest applicable guideline range.  This required careful consideration of how the
+    evaluate the closest applicable guideline range. This required careful consideration of how the
     lookup logic should behave when handling households larger than the maximum defined guideline value.
-     I implemented logic that ensures the algorithm consistently applies the correct threshold by
-    selecting the appropriate guideline entry and applying a structured comparison method.  This
+    I implemented logic that ensures the algorithm consistently applies the correct threshold by
+    selecting the appropriate guideline entry and applying a structured comparison method. This
     experience reinforced the importance of clearly defining algorithm boundaries and ensuring
     predictable behavior when processing real-world data that may not always align perfectly with
     structured datasets.
@@ -281,12 +281,75 @@
 
   <p>
     This enhancement strengthened my understanding of how algorithms and data structures support
-    reliable decision-making in software systems.  By implementing a structured eligibility
+    reliable decision-making in software systems. By implementing a structured eligibility
     determination process, I was able to demonstrate how computer science principles can be applied
-    to improve operational efficiency while ensuring compliance with established guidelines.  The
+    to improve operational efficiency while ensuring compliance with established guidelines. The
     resulting component provides a repeatable, transparent, and scalable method of determining
     eligibility that improves both administrative efficiency and data consistency within the food
     pantry system.
+  </p>
+
+  <h3>Screenshots</h3>
+
+  <h4>People List — Before &amp; After</h4>
+  <p>
+    The original People list displayed only name, phone, status, and actions. The enhanced version
+    adds a <strong>Tier</strong> column showing each recipient's calculated eligibility tier directly
+    in the list, giving volunteers immediate visibility into eligibility status without opening
+    individual records.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Original</th><th>Enhanced</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">
+          <img src="https://slaglecloud.net/ePortfolio/ORIGINAL-People.png" width="420" alt="Original People list — no Tier column" />
+          <br /><em>No eligibility tier displayed</em>
+        </td>
+        <td align="center">
+          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-People.png" width="420" alt="Enhanced People list — Tier column added" />
+          <br /><em>Eligibility tier badge displayed for each recipient</em>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Add Person — Eligibility Engine Integration</h4>
+  <p>
+    The Add Person form was updated to collect household size and annual gross income at the time of
+    registration. When the record is saved, the eligibility engine runs automatically and assigns
+    the appropriate tier before the record is committed, ensuring every new recipient enters the
+    system with a calculated eligibility result.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Before Save</th><th>After Save</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">
+          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AddPerson-SavetoRunEligibilityEngine.png" width="420" alt="Add Person form with household size and income fields ready to save" />
+          <br /><em>Household size and income entered — Save triggers the engine</em>
+        </td>
+        <td align="center">
+          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AddPerson-EligibilityEngineCompleted.png" width="420" alt="People list after add — new recipient shown with Tier badge" />
+          <br /><em>Recipient added with eligibility tier automatically assigned</em>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Edit Person — Eligibility Results</h4>
+  <p>
+    The Edit Person view surfaces the full eligibility determination result inline, displaying the
+    assigned tier, FPL percentage, FPL threshold amount, and the timestamp of the last calculation.
+    Saving any change to household size or income reruns the engine and updates the result
+    automatically.
+  </p>
+  <p align="center">
+    <img src="https://slaglecloud.net/ePortfolio/ENHANCED-EditPerson-ShowsResults-SavetoRerunEngine.png" width="860" alt="Edit Person view showing Eligibility Results section with tier, FPL percentage, FPL amount, and last calculated timestamp" />
   </p>
 
   <h3>Artifact Files</h3>
