@@ -56,65 +56,128 @@
   </section>
 
   <!-- Enhancement One -->
-  <section>
-   <h2>Software Design and Engineering Artifact</h2>
+<section>
+  <h2>Enhancement One — Software Design and Engineering</h2>
 
-   <p>
-      This artifact was selected for the Software Design and Engineering category because it 
-      demonstrates several important software engineering principles, including secure system 
-      design, database-driven application architecture, and maintainable authentication logic. 
-       Because the system is actively used in a real community environment, the software must be 
-      reliable, secure, and adaptable as operational needs evolve.  These requirements make this 
-      artifact a strong representation of applied software design principles.
-   </p>
-   
-   <p>
-      The enhancement implemented for this milestone was the development of a 
-      <strong>Role-Based Access Control System</strong> for the administration portal. 
-       In the original version of the application, administrative functions were handled by me.
-      During initial setup, an unauthenticated page was created to allow the creation of the first 
-      administrator account by accepting a username and password, hashing the password, and storing 
-      the credentials in the database.  While functional for initial configuration, this approach presented
-      a security vulnerability if the page were discovered or left accessible.
-   </p>
-   
-   <p>
-      To improve system security and align with standard software engineering practices, the 
-      authorization structure was redesigned so that permissions are defined within the database 
-      and enforced through application logic.  This enhancement required the creation of a roles 
-      table, modification of the administrative users table to include a role reference, and 
-      updates to the authentication module to dynamically evaluate user permissions when 
-      protected pages are accessed.
-   </p>
-   
-   <p>
-      Implementing RBAC improved the overall system architecture by separating user identity 
-      from permission definitions, a design approach consistent with established secure system 
-      design practices (Ferraiolo et al., 2001).  This structure allows additional roles to be 
-      introduced in the future without requiring significant changes to application logic, 
-      thereby improving both maintainability and scalability.  Additional safeguards were also 
-      implemented within the administrative user management interface to prevent administrators 
-      from unintentionally disabling their own accounts or modifying their own privilege levels.
-   </p>
-   
-   <p>
-      Through this enhancement process, I demonstrated the ability to design and implement 
-      computing solutions using established software engineering principles.  The redesign 
-      required coordinated changes to both the database schema and authentication workflow 
-      while maintaining compatibility with the rest of the application.  Security considerations 
-      were also incorporated to ensure restricted pages cannot be accessed through direct URL 
-      navigation by unauthorized users.
-   </p>
-   
-   <p>
-      This enhancement reinforced the importance of designing systems that anticipate evolving 
-      requirements.  Although the original system functioned as intended, the lack of a structured 
-      role management framework made later modifications more complex and introduced potential 
-      security risks. By implementing a normalized role structure and database-driven permission 
-      validation, the system is now more secure, flexible, and maintainable.  This experience 
-      strengthened my understanding of how thoughtful architectural decisions improve both the 
-      security and long-term scalability of real-world applications.
-   </p>
+  <p>
+    The artifact I selected for the Software Design and Engineering category is my 84 Community Food
+    Pantry Web Application, a full-stack web application I developed to support the operations of my
+    local community food pantry. The application manages recipient contact information, recipient
+    registration tasks, distribution tracking, and administrative functions used by the volunteers
+    during food distribution events. The system was originally developed as a solution for the pantry;
+    I cloned and purged the production system for use in my capstone project so enhancements could be
+    implemented without affecting the live system. These enhancements will be integrated into the live
+    system upon my completion of this course.
+  </p>
+
+  <p>
+    I selected this artifact for my ePortfolio because it demonstrates several important software
+    engineering principles including secure system design, database-driven application architecture,
+    and maintainable authentication logic. The system is actively used in a real community environment,
+    which requires the software to be reliable, secure, and adaptable as operational needs change.
+    This made this artifact a strong example of applied software design.
+  </p>
+
+  <p>
+    The enhancement implemented for this milestone was the development of a Role-Based Access Control
+    system, or RBAC, for the administration portal. Based on the original design of the application,
+    all administrative functions were handled by a small group of volunteers. Because of this, an
+    unauthenticated page was created which would accept a username and password, hash the password and
+    insert the username and hashed password into the database. This method, although acceptable for
+    initial setup and first admin creation, if not addressed, poses a significant security vulnerability
+    if it were discovered. To address this, I redesigned the authorization structure so that
+    administrative permissions are defined in the database and enforced by the application logic. This
+    required creating a new roles table, modifying the admin users table to include a role reference,
+    and updating the authentication module to dynamically evaluate user permissions when pages are
+    visited.
+  </p>
+
+  <p>
+    Implementing Role Based Access Control significantly improved the system architecture. This
+    improvement separates user identity from permission definitions, which follows standard software
+    engineering practices for secure system design (Ferraiolo et al., 2001). This approach allows
+    additional roles to be introduced in the future without rewriting application logic, improving
+    both maintainability and scalability. I also added safeguards in the administrative user
+    management interface to prevent administrators from accidentally disabling their own accounts or
+    modifying their own privilege level.
+  </p>
+
+  <p>
+    Through this enhancement process, I demonstrated skills aligned with several program outcomes,
+    particularly the ability to design and implement computing solutions using established software
+    engineering practices. The redesign required the modification of both the database schema and the
+    application authentication flow, while maintaining compatibility with the remaining application
+    pages. I also considered security implications during development, ensuring that restricted pages
+    could not be accessed through direct URL entry by unauthorized users.
+  </p>
+
+  <p>
+    While working on this enhancement, I was reminded of the importance of designing systems that
+    anticipate unforeseen or altered requirements. Although the original version functions correctly
+    for its intended purpose, choosing to not structure the system for role management has
+    inadvertently caused the implementation to be more difficult and left a significant security
+    vulnerability. By introducing a normalized role structure and database-driven permission checks,
+    the system is now more robust and easier to maintain. This experience strengthened my understanding
+    of how thoughtful software architecture decisions can improve both security and long-term
+    scalability of real-world applications.
+  </p>
+
+  <h3>Screenshots</h3>
+
+  <h4>Admin Dashboard — Before &amp; After</h4>
+  <p>
+    The original dashboard provided no access controls — all navigation options were available
+    to any authenticated user. The enhanced dashboard conditionally surfaces the
+    <strong>User Manager</strong> navigation item only to users assigned the Global Admin role.
+  </p>
+  <table>
+    <thead>
+      <tr><th>Original</th><th>Enhanced</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td align="center">
+          <img src="https://slaglecloud.net/ePortfolio/ORIGINAL-AdminDashboard.png" width="420" alt="Original Admin Dashboard — no User Manager navigation" />
+          <br /><em>No User Manager link visible</em>
+        </td>
+        <td align="center">
+          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AdminDashboard.png" width="420" alt="Enhanced Admin Dashboard — User Manager navigation added" />
+          <br /><em>User Manager link visible for Global Admin role</em>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>User Manager</h4>
+  <p>
+    The User Manager module, restricted exclusively to the Global Admin role, displays all
+    administrative accounts with their assigned role, status, and last login. Role badges
+    visually distinguish Global Admin from Pantry Admin accounts, and the currently logged-in
+    user is identified with a "You" badge to support the safeguard preventing self-modification.
+  </p>
+  <p align="center">
+    <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AdminUserManager.png" width="860" alt="Enhanced Admin User Manager — role and status display" />
+  </p>
+
+  <h4>Add Admin User</h4>
+  <p>
+    New administrator accounts require a username, password, and role assignment at creation.
+    Roles are populated dynamically from the database, ensuring that any roles added in the
+    future automatically appear in this interface without code changes.
+  </p>
+  <p align="center">
+    <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AddAdminuser.png" width="860" alt="Enhanced Add Admin User form with role selection" />
+  </p>
+
+  <h4>Edit Admin User</h4>
+  <p>
+    The edit interface allows a Global Admin to change another user's role, reset their
+    password, or deactivate their account. Safeguards in the application logic prevent an
+    administrator from modifying their own role or deactivating their own account from this screen.
+  </p>
+  <p align="center">
+    <img src="https://slaglecloud.net/ePortfolio/ENHANCED-EditAdminuser.png" width="860" alt="Enhanced Edit Admin User interface with role, password, and status controls" />
+  </p>
 
   <h3>Artifact Files</h3>
     <table>
