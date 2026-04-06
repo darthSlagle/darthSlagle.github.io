@@ -549,6 +549,7 @@
        </tr>
      </thead>
      <tbody>
+        <tr>
          <td align="center">
            <img src="https://slaglecloud.net/ePortfolio/ENHANCED-TableSchemaDiagram.png" width="100%" alt="Enhanced database schema — roles, eligibility columns, and audit table added" />
            <br /><em>tbl_Roles linked to tbl_AdminUsers, tbl_People expanded, tbl_EligibilityAudit added</em>
