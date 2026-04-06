@@ -413,7 +413,7 @@
       </tr>
       <tr>
         <td><a href="enhancement-two/original/people.cfm">people.cfm (Original)</a></td>
-        <td>OOriginal recipient management module before eligibility engine integration</td>
+        <td>Original recipient management module before eligibility engine integration</td>
       </tr>
     </tbody>
   </table>
