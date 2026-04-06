@@ -126,8 +126,8 @@
 
   <h4>Admin Dashboard — Before &amp; After</h4>
   <p>
-    The original dashboard provided no access controls — all navigation options were available
-    to any authenticated user. The enhanced dashboard conditionally surfaces the
+    The original dashboard provided no access controls.  All navigation options were available
+    to any authenticated user.  The enhanced dashboard conditionally shows the
     <strong>User Manager</strong> navigation item only to users assigned the Global Admin role.
   </p>
   <table>
@@ -150,8 +150,8 @@
 
   <h4>User Manager</h4>
   <p>
-    The User Manager module, restricted exclusively to the Global Admin role, displays all
-    administrative accounts with their assigned role, status, and last login. Role badges
+    The User Manager, only accessible to the Global Admin role, displays all
+    administrative accounts with their assigned role, status, and last login.  Role badges
     visually distinguish Global Admin from Pantry Admin accounts, and the currently logged-in
     user is identified with a "You" badge to support the safeguard preventing self-modification.
   </p>
@@ -162,7 +162,7 @@
   <h4>Add Admin User</h4>
   <p>
     New administrator accounts require a username, password, and role assignment at creation.
-    Roles are populated dynamically from the database, ensuring that any roles added in the
+     Roles are populated dynamically from the database, ensuring that any roles added in the
     future automatically appear in this interface without code changes.
   </p>
   <p align="center">
@@ -172,7 +172,7 @@
   <h4>Edit Admin User</h4>
   <p>
     The edit interface allows a Global Admin to change another user's role, reset their
-    password, or deactivate their account. Safeguards in the application logic prevent an
+    password, or deactivate their account.  Safeguards in the application logic prevent an
     administrator from modifying their own role or deactivating their own account from this screen.
   </p>
   <p align="center">
