@@ -16,10 +16,123 @@
   </nav>
 
   <!-- Professional Self-Assessment -->
-  <section>
-    <h1>Self-Assessment</h1>
-    <span>Coming Soon</span>
-  </section>
+<section>
+  <h1>Self-Assessment</h1>
+
+  <p>
+    Completing the Computer Science program at Southern New Hampshire University has been a
+    meaningful experience that has shaped both my technical skills and my professional approach
+    to solving real-world problems.  Throughout the program, I have had the opportunity to apply
+    computer science principles in ways that extend well beyond academic exercises, and my
+    capstone project shown in this ePortfolio is the clearest example of that.  I did not build the 84 Community
+    Food Pantry Web Application for a grade, it was built it to help my community food pantry be more effective to
+    be able to feed more people.  Every decision to enhance the application has practical use in mind.
+  </p>
+
+  <p>
+    While volunteering at the 84 Community Food Pantry, I observed firsthand the operational challenges
+    the coordinators faced managing recipient registrations, food distributions, and volunteers
+    using the manual processes.  Before the system existed, eligibility determinations were
+    performed by hand using printed guideline tables.  Distribution registrations were tracked by
+    hand using pen and paper, and communication was handled manually by sms texting.  I developed the application based
+    on direct observation of these processes and ongoing input from the volunteers who would use
+    it.  As the system was introduced into their operations, I gathered feedback on how it fit into
+    their workflows and made improvements based on what was and was not working in
+    practice.  I also collected feedback from recipients of the food pantry on the ease of the
+    registration process, which allowed for proper refinement to the recipient-facing components
+    of the system.  This experience reinforced that effective software development is not a solitary
+    process, but it requires listening to the people who will use the system and designing
+    solutions around their actual needs rather than assumptions about them.
+  </p>
+
+  <p>
+    Collaborating in a team environment and communicating with stakeholders were skills I
+    developed throughout the program and applied daily in my professional role.  In my current
+    position, I lead a team of Systems Administrators and regularly partner with software
+    developers to design and build systems that meet both technical and operational requirements.
+     This cross-functional collaboration requires translating infrastructure and security
+    constraints into terms that developers can act on and translating application requirements
+    into infrastructure decisions that the systems team can implement reliably and maintain
+    scalability.  My capstone project reflected this same dynamic.  Working with the pantry
+    volunteers required translating operational needs into technical requirements and
+    communicating design decisions in terms that were meaningful to a non-technical audience.
+     For example, when I introduce the Role-Based Access Control system, I will need to explain
+    to the volunteer team not just what had changed, but why the change matters and how the new
+    structure will be shaped to their current area of responsibility.  Courses such as CS 250
+    Software Development Lifecycle gave me frameworks for thinking about stakeholder
+    communication and requirements gathering that I applied throughout this project.  The ability
+    to bridge the gap between technical implementation and practical operational impact is a
+    skill I consider essential as a technology leader and a software developer.
+  </p>
+
+  <p>
+    My work in data structures and algorithms throughout the program prepared me to approach the
+    eligibility determination engine with a clear understanding of what makes an algorithm
+    reliable and maintainable.  Courses such as CS 300: Analysis and Design and other computer
+    science coursework taken at Edinboro University in my past, gave me a foundation for thinking about
+    how reference data should be structured to support decision logic efficiently.  The eligibility
+    engine I developed for my capstone translates Federal Poverty Level guidelines into a
+    deterministic classification process that separates reference data from procedural logic,
+    stores threshold values in a normalized database table, and handles boundary conditions
+    consistently.  This design reflects an understanding of how the right data structure choice
+    directly affects the long-term maintainability of a system. Leading a systems team has
+    reinforced this understanding for me as decisions made at the architecture level have
+    long-term consequences that are far more costly to correct after deployment than they are
+    to get right from the beginning.
+  </p>
+
+  <p>
+    Software engineering and database design are areas where I have both academic preparation
+    and significant professional experience.  In my role as Senior Manager of Systems and Security
+    Administration, while partnering with the software developers, I have seen firsthand how gaps
+    between application design and infrastructure design create operational problems that are
+    difficult to resolve after a system is in production.  The SNHU Computer Science program
+    enhanced my ability to apply formal software engineering principles to close that gap.  The
+    Role-Based Access Control enhancement required coordinated changes across both the database
+    schema and the application authentication layer, which demanded the kind of disciplined,
+    structured thinking that software engineering courses were reinforced.  The database
+    enhancements required writing production-safe deployment scripts that could be applied to a
+    live system without data loss.  This constraint pushed me to be more deliberate about order
+    of operations and constraint enforcement than typical development work often requires.
+     Applying iterative testing practices learned through CS 320: Software Test, Automation, and
+    Quality Assurance, I verified the eligibility engine against a range of known household size
+    and income combinations.  I also tested boundary cases to confirm the algorithm produced the
+    correct tier assignment.  This is a discipline I now bring to every system my team supports.
+  </p>
+
+  <p>
+    Security has been a consistent theme across my program and is central to my professional
+    role as a systems and security manager.  Courses such as CS 305: Software Security, helped
+    define the principles that I applied directly for this project.  The original application
+    contained an unauthenticated account creation page that posed a real security vulnerability.
+     Addressing this through a database-driven Role-Based Access Control system, rather than just
+    removing the file, reflects the security mindset the program helped me develop.  In my
+    professional role, I am responsible for anticipating and mitigating security risks across
+    the systems my team manages, and I regularly work with software developers to ensure that
+    security is considered at the design level rather than addressed as an afterthought.
+     Designing systems that anticipate how they could be misused and building defenses into the
+    architecture rather than layering them on afterward, is an approach I carry into both my
+    academic and professional work.
+  </p>
+
+  <p>
+    The three enhancements in this ePortfolio are not independent exercises but rather represent
+    three layers of the same real-world system.  Enhancement One addresses the security and access
+    control architecture of the administration portal.  Enhancement Two addresses the algorithmic
+    logic that automates eligibility determination for recipients.  Enhancement Three addresses
+    the database schema that supports both of those enhancements, ensuring that the underlying
+    data structures are normalized, integrity-enforced, and safe to deploy in a production
+    environment.  Together, they demonstrate an ability to design and improve a complete software
+    system from the application layer through the data layer, with security and maintainability
+    considered at every level.  This portfolio reflects not only the knowledge gained throughout
+    my time in the Computer Science program at SNHU, but also how that knowledge has been
+    applied to deliver a solution that provides meaningful value to my community.  Completing
+    this program has strengthened my technical expertise and leadership capabilities, allowing
+    me to lead more effectively and contribute at a higher level within my organization.
+  </p>
+
+</section>
+
 
   <!-- Code Review -->
   <section>
