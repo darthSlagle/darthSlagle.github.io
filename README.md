@@ -3,7 +3,7 @@
 <div>
    <!-- Table of Contents -->
   <nav>
-    <h2>Table of Contents</h2>
+    <h1>Table of Contents</h1>
     <ol>
       <li><a href="#self-assessment">Self-Assessment</a></li>
       <li><a href="#code-review">Code Review</a></li>
@@ -17,13 +17,13 @@
 
   <!-- Professional Self-Assessment -->
   <section>
-    <h2>Self-Assessment</h2>
+    <h1>Self-Assessment</h1>
     <span>Coming Soon</span>
   </section>
 
   <!-- Code Review -->
   <section>
-    <h2>Code Review</h2>
+    <h1>Code Review</h1>
     <p>
       Before any enhancements were made, I conducted a structured code review of my selected artifact.
       The review walks through existing functionality, identifies areas for improvement in structure,
@@ -41,7 +41,7 @@
 
   <!-- Artifact Overview -->
   <section>
-    <h2>Artifact Overview</h2>
+    <h1>Artifact Overview</h1>
    <p>
       The artifact used across all three enhancement categories in this ePortfolio is the 
       <strong>84 Community Food Pantry Web Application</strong>, a full-stack web application 
@@ -57,7 +57,7 @@
 
   <!-- Enhancement One -->
 <section>
-  <h2>Enhancement One — Software Design and Engineering</h2>
+  <h1>Enhancement One — Software Design and Engineering</h1>
 
   <p>
     The artifact I selected for the Software Design and Engineering category is my <strong>84 Community Food
@@ -227,7 +227,7 @@
 
 <!-- Enhancement Two -->
 <section>
-  <h2>Enhancement Two — Algorithms and Data Structures</h2>
+  <h1>Enhancement Two — Algorithms and Data Structures</h1>
   <p>
     The artifact I selected for the Algorithms and Data Structures category is the <strong>income eligibility
     determination engine</strong> developed for the 84 Community Food Pantry web application.  This component
@@ -421,7 +421,7 @@
 
 <!-- Enhancement Three -->
 <section>
-  <h2>Enhancement Three — Databases</h2>
+  <h1>Enhancement Three — Databases</h1>
   <p>
     The artifact I selected for the Databases category is the <strong>database schema</strong> supporting the 84 Community
     Food Pantry web application.  The application manages recipient records, food distribution scheduling
@@ -610,7 +610,7 @@
 
 <!-- References -->
 <section>
-  <h2>References</h2>
+  <h1>References</h1>
   <p>
     Ferraiolo, D. F., Sandhu, R., Gavrila, S., Kuhn, D. R., &amp; Chandramouli, R. (2001).
     Proposed NIST standard for role-based access control.
