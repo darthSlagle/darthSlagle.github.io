@@ -137,11 +137,11 @@
     <tbody>
       <tr>
         <td align="center">
-          <img src="https://slaglecloud.net/ePortfolio/ORIGINAL-AdminDashboard.png" width="420" alt="Original Admin Dashboard — no User Manager navigation" />
+          <img src="https://slaglecloud.net/ePortfolio/ORIGINAL-AdminDashboard.png" width="620" alt="Original Admin Dashboard — no User Manager navigation" />
           <br /><em>No User Manager link visible</em>
         </td>
         <td align="center">
-          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AdminDashboard.png" width="420" alt="Enhanced Admin Dashboard — User Manager navigation added" />
+          <img src="https://slaglecloud.net/ePortfolio/ENHANCED-AdminDashboard.png" width="620" alt="Enhanced Admin Dashboard — User Manager navigation added" />
           <br /><em>User Manager link visible for Global Admin role</em>
         </td>
       </tr>
