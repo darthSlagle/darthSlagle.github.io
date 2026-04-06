@@ -1,0 +1,87 @@
+USE [84-Pantry-Orig];
+GO
+ 
+CREATE TABLE [dbo].[tbl_AdminAudit]
+(
+    [details] VARCHAR(255) NULL,
+    CONSTRAINT [PK__tbl_Admi__43D173F9F0D3E137] PRIMARY KEY CLUSTERED ([auditID] ASC)
+);
+GO
+CREATE NONCLUSTERED INDEX [IX_tbl_AdminAudit_eventTime] ON [dbo].[tbl_AdminAudit] ([eventTime] DESC);
+GO
+CREATE TABLE [dbo].[tbl_AdminUsers]
+(
+    [passwordIters] INT NOT NULL CONSTRAINT [DF_tbl_AdminUsers_passwordIters] DEFAULT ((210000)),
+    CONSTRAINT [UQ__tbl_Admi__F3DBC572A0129370] UNIQUE NONCLUSTERED ([username] ASC),
+    CONSTRAINT [PK__tbl_Admi__AD05008697CB8F27] PRIMARY KEY CLUSTERED ([adminID] ASC)
+);
+GO
+CREATE TABLE [dbo].[tbl_ContactRequests]
+(
+    [userAgent] NVARCHAR(400) NULL,
+    CONSTRAINT [PK__tbl_Cont__E3C5DE51D4B04332] PRIMARY KEY CLUSTERED ([requestID] ASC)
+);
+GO
+CREATE NONCLUSTERED INDEX [IX_tbl_ContactRequests_Status_CreatedAt] ON [dbo].[tbl_ContactRequests] ([status] ASC, [createdAt] DESC);
+GO
+CREATE TABLE [dbo].[tbl_DistributionRegistrations]
+(
+    [capturedAt] DATETIME NOT NULL CONSTRAINT [DF_tbl_DistRegs_capturedAt] DEFAULT (getdate()),
+    CONSTRAINT [PK__tbl_Dist__7C3CF6401B4E15BF] PRIMARY KEY CLUSTERED ([distRegID] ASC)
+);
+GO
+CREATE NONCLUSTERED INDEX [IX_tbl_DistRegs_dist_last_first] ON [dbo].[tbl_DistributionRegistrations] ([distributionID] ASC, [lastNameSnap] ASC, [firstNameSnap] ASC);
+GO
+CREATE TABLE [dbo].[tbl_Distributions]
+(
+    [notes] VARCHAR(500) NULL,
+    CONSTRAINT [PK__tbl_Dist__7865559F32703D1F] PRIMARY KEY CLUSTERED ([distributionID] ASC)
+);
+GO
+CREATE NONCLUSTERED INDEX [IX_tbl_Distributions_status_date] ON [dbo].[tbl_Distributions] ([status] ASC, [distributionDate] DESC);
+GO
+CREATE TABLE [dbo].[tbl_People]
+(
+    [updatedAt] DATETIME NULL,
+    CONSTRAINT [UQ__tbl_Peop__B43B145FF905F34D] UNIQUE NONCLUSTERED ([phone] ASC),
+    CONSTRAINT [PK__tbl_Peop__EC7D7D6D6B7CA612] PRIMARY KEY CLUSTERED ([personID] ASC)
+);
+GO
+CREATE NONCLUSTERED INDEX [IX_tbl_People_last_first] ON [dbo].[tbl_People] ([lastName] ASC, [firstName] ASC);
+GO
+CREATE TABLE [dbo].[tbl_Registrations]
+(
+    [distributionID] INT NULL,
+    CONSTRAINT [PK__tbl_Regi__D124D3F590E882DB] PRIMARY KEY CLUSTERED ([entryID] ASC)
+);
+GO
+CREATE NONCLUSTERED INDEX [IX_tbl_Registrations_regDateTime_cancel] ON [dbo].[tbl_Registrations] ([regDateTime] ASC, [isCancelled] ASC);
+GO
+CREATE NONCLUSTERED INDEX [IX_tbl_Registrations_DistributionID_Phone] ON [dbo].[tbl_Registrations] ([distributionID] ASC, [phone] ASC) INCLUDE ([regDateTime], [isCancelled]);
+GO
+ALTER TABLE [dbo].[tbl_DistributionRegistrations]
+    ADD CONSTRAINT [FK_DistRegs_Distributions]
+    FOREIGN KEY ([distributionID])
+    REFERENCES [dbo].[tbl_Distributions] ([distributionID])
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION;
+GO
+ 
+ALTER TABLE [dbo].[tbl_DistributionRegistrations]
+    ADD CONSTRAINT [FK_DistRegs_People]
+    FOREIGN KEY ([personID])
+    REFERENCES [dbo].[tbl_People] ([personID])
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION;
+GO
+ 
+ALTER TABLE [dbo].[tbl_Registrations]
+    ADD CONSTRAINT [FK_tbl_Registrations_Distributions]
+    FOREIGN KEY ([distributionID])
+    REFERENCES [dbo].[tbl_Distributions] ([distributionID])
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION;
+GO
+ 
+
+Completion time: 2026-03-28T06:44:19.7676851-04:00
