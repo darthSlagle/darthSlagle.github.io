@@ -710,11 +710,11 @@
         <td>Full database schema export reflecting all enhancements applied across milestones</td>
       </tr>
       <tr>
-        <td><a href="enhancement-three/original/RBAC_Deployment.sql">RBAC_Deployment.sql</a></td>
+        <td><a href="enhancement-three/RBAC_Deployment.sql">RBAC_Deployment.sql</a></td>
         <td>Deployment script creating the roles table and linking it to the admin users table</td>
       </tr>
       <tr>
-        <td><a href="enhancement-three/original/Eligibility_Engine_Deployment.sql">Eligibility_Engine_Deployment.sql</a></td>
+        <td><a href="enhancement-three/Eligibility_Engine_Deployment.sql">Eligibility_Engine_Deployment.sql</a></td>
         <td>Deployment script adding FPL guidelines, eligibility audit table, and recipient eligibility columns</td>
       </tr> 
     </tbody>
