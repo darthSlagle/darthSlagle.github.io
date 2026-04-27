@@ -315,23 +315,23 @@
       </thead>
       <tbody>
         <tr>
-          <td><a href="enhancement-one/enhanced/_auth.cfm">_auth.cfm (Enhanced)</a></td>
+          <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-one/enhanced/_auth.cfm">_auth.cfm (Enhanced)</a></td>
           <td>Authentication guard with role loading and page-level access control</td>
         </tr>
         <tr>
-          <td><a href="enhancement-one/enhanced/index.cfm">index.cfm (Enhanced)</a></td>
+          <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-one/enhanced/index.cfm">index.cfm (Enhanced)</a></td>
           <td>Admin dashboard with conditional User Manager navigation for Global Admin</td>
         </tr>
         <tr>
-          <td><a href="enhancement-one/enhanced/users.cfm">users.cfm (Enhanced)</a></td>
+          <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-one/enhanced/users.cfm">users.cfm (Enhanced)</a></td>
           <td>User management module &mdash; restricted to Global Admin role</td>
         </tr>
         <tr>
-          <td><a href="enhancement-one/original/_auth.cfm">_auth.cfm (Original)</a></td>
+          <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-one/original/_auth.cfm">_auth.cfm (Original)</a></td>
           <td>Original authentication guard before RBAC implementation</td>
         </tr>
         <tr>
-          <td><a href="enhancement-one/original/index.cfm">index.cfm (Original)</a></td>
+          <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-one/original/index.cfm">index.cfm (Original)</a></td>
           <td>Original admin dashboard before RBAC implementation</td>
         </tr>
       </tbody>
