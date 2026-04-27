@@ -517,15 +517,15 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="enhancement-two/enhanced/eligibility_engine.cfm">eligibility_engine.cfm (Enhanced)</a></td>
+        <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-two/enhanced/eligibility_engine.cfm">eligibility_engine.cfm (Enhanced)</a></td>
         <td>Modular eligibility determination engine using database-driven FPL thresholds</td>
       </tr>
        <tr>
-        <td><a href="enhancement-two/enhanced/people.cfm">people.cfm (Enhanced)</a></td>
+        <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-two/enhanced/people.cfm">people.cfm (Enhanced)</a></td>
         <td>Recipient management module updated to integrate automated eligibility determination</td>
       </tr>
       <tr>
-        <td><a href="enhancement-two/original/people.cfm">people.cfm (Original)</a></td>
+        <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-two/original/people.cfm">people.cfm (Original)</a></td>
         <td>Original recipient management module before eligibility engine integration</td>
       </tr>
     </tbody>
@@ -702,19 +702,19 @@
     </thead>
     <tbody>
       <tr>
-        <td><a href="enhancement-three/original/Schema Export - Original.txt">Schema Export — Original</a></td>
+        <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-three/original/Schema%20Export%20-%20Original.txt">Schema Export — Original</a></td>
         <td>Baseline database schema export prior to any enhancements</td>
       </tr>
       <tr>
-        <td><a href="enhancement-three/enhanced/Schema Export - Enhanced.txt">Schema Export — Enhanced</a></td>
+        <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-three/enhanced/Schema%20Export%20-%20Enhanced.txt">Schema Export — Enhanced</a></td>
         <td>Full database schema export reflecting all enhancements applied across milestones</td>
       </tr>
       <tr>
-        <td><a href="enhancement-three/RBAC_Deployment.sql">RBAC_Deployment.sql</a></td>
+        <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-three/RBAC_Deployment.sql">RBAC_Deployment.sql</a></td>
         <td>Deployment script creating the roles table and linking it to the admin users table</td>
       </tr>
       <tr>
-        <td><a href="enhancement-three/Eligibility_Engine_Deployment.sql">Eligibility_Engine_Deployment.sql</a></td>
+        <td><a href="https://github.com/darthSlagle/darthSlagle.github.io/blob/main/enhancement-three/Eligibility_Engine_Deployment.sql">Eligibility_Engine_Deployment.sql</a></td>
         <td>Deployment script adding FPL guidelines, eligibility audit table, and recipient eligibility columns</td>
       </tr> 
     </tbody>
