@@ -11,13 +11,13 @@
       <li><a href="#enhancement-one--software-design-and-engineering">Enhancement One — Software Design and Engineering</a></li>
       <li><a href="#enhancement-two--algorithms-and-data-structures">Enhancement Two — Algorithms and Data Structures</a></li>
       <li><a href="#enhancement-three--databases">Enhancement Three — Databases</a></li>
-      <li><a href="references">References</a></li>
+      <li><a href="#references">References</a></li>
     </ol>
   </nav>
 
   <!-- Professional Self-Assessment -->
 <section>
-  <h1>Self-Assessment</h1>
+  <h1 id="self-assessment">Self-Assessment</h1>
 
   <p>
     Completing the Computer Science program at Southern New Hampshire University has been a
@@ -136,7 +136,7 @@
 
   <!-- Code Review -->
   <section>
-    <h1>Code Review</h1>
+    <h1 id="code-review">Code Review</h1>
     <p>
       Before any enhancements were made, I conducted a structured code review of my selected artifact.
       The review walks through existing functionality, identifies areas for improvement in structure,
@@ -154,7 +154,7 @@
 
   <!-- Artifact Overview -->
   <section>
-    <h1>Artifact Overview</h1>
+    <h1 id="artifact-overview">Artifact Overview</h1>
    <p>
       The artifact used across all three enhancement categories in this ePortfolio is the 
       <strong>84 Community Food Pantry Web Application</strong>, a full-stack web application 
@@ -170,7 +170,7 @@
 
   <!-- Enhancement One -->
 <section>
-  <h1>Enhancement One — Software Design and Engineering</h1>
+  <h1 id="enhancement-one--software-design-and-engineering">Enhancement One — Software Design and Engineering</h1>
 
   <p>
     The artifact I selected for the Software Design and Engineering category is my <strong>84 Community Food
@@ -340,7 +340,7 @@
 
 <!-- Enhancement Two -->
 <section>
-  <h1>Enhancement Two — Algorithms and Data Structures</h1>
+  <h1 id="enhancement-two--algorithms-and-data-structures">Enhancement Two — Algorithms and Data Structures</h1>
   <p>
     The artifact I selected for the Algorithms and Data Structures category is the <strong>income eligibility
     determination engine</strong> developed for the 84 Community Food Pantry web application.  This component
@@ -534,7 +534,7 @@
 
 <!-- Enhancement Three -->
 <section>
-  <h1>Enhancement Three — Databases</h1>
+  <h1 id="enhancement-three--databases">Enhancement Three — Databases</h1>
   <p>
     The artifact I selected for the Databases category is the <strong>database schema</strong> supporting the 84 Community
     Food Pantry web application.  The application manages recipient records, food distribution scheduling
@@ -723,7 +723,7 @@
 
 <!-- References -->
 <section>
-  <h1>References</h1>
+  <h1 id="references">References</h1>
   <p>
     Ferraiolo, D. F., Sandhu, R., Gavrila, S., Kuhn, D. R., &amp; Chandramouli, R. (2001).
     Proposed NIST standard for role-based access control.
